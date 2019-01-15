@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #include <conio.h>
 #define MAX 10
 int stack[MAX],topA = -1,topB = MAX;
@@ -6,6 +6,7 @@ void pushA(int val)
 {
 	if(topA == topB-1)
 		printf("\n OVERFLOW");
+
 	else
 	{
 		topA+= 1;
@@ -34,7 +35,7 @@ void display_stackA()
 		printf("\n Stack A is Empty");
 	else
 	{
-		for(i = topA;i>0;i--)
+		for(i = topA;i >= 0;i--)
 		{
 		printf("\t %d",stack[i]);
 		}
